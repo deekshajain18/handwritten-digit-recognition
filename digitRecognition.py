@@ -3,18 +3,13 @@ import cv2
 from skimage import img_as_ubyte		
 from skimage.color import rgb2gray
 from keras.models import load_model
-
 width = 640
 height = 480
 cameraNo = 0
- 
 cap = cv2.VideoCapture(cameraNo)
 cap.set(3,width)
 cap.set(4,height)
- 
-
 model = load_model('mymodel2.h5')
- 
 while True:
 	success, img_original = cap.read()
 	img_gray = rgb2gray(img_original)
