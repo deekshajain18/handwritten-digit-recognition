@@ -32,9 +32,8 @@ Dense layer with 10 units, softmax activation
 Running the Training Script
 To train the model, run the following command:
 
-sh
-Copy code
 python train.py
+
 The trained model is saved as mymodel2.h5.
 
 ## Recognizing Digits from Live Video
